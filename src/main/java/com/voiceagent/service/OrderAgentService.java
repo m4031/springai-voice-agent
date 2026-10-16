@@ -1,4 +1,4 @@
-package com.app.voiceagent.service;
+package com.voiceagent.service;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;

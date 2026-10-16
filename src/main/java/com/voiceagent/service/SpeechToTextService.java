@@ -1,4 +1,4 @@
-package com.app.voiceagent.service;
+package com.voiceagent.service;
 
 import com.google.genai.Client;
 import com.google.genai.types.Content;

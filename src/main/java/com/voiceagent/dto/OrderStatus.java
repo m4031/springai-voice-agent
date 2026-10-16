@@ -1,3 +1,3 @@
-package com.app.voiceagent.dto;
+package com.voiceagent.dto;
 
 public record OrderStatus( String orderId, String status, String expectedDelivery) { }

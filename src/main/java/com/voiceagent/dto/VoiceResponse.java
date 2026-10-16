@@ -1,3 +1,3 @@
-package com.app.voiceagent.dto;
+package com.voiceagent.dto;
 
 public record VoiceResponse( String transcript, String response, String audioBase64) { }

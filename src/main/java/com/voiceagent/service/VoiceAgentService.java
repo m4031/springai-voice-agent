@@ -1,6 +1,6 @@
-package com.app.voiceagent.service;
+package com.voiceagent.service;
 
-import com.app.voiceagent.dto.VoiceResponse;
+import com.voiceagent.dto.VoiceResponse;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 

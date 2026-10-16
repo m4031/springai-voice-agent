@@ -1,7 +1,7 @@
-package com.app.voiceagent.tool;
+package com.voiceagent.tool;
 
-import com.app.voiceagent.dto.OrderStatus;
-import com.app.voiceagent.service.OrderService;
+import com.voiceagent.dto.OrderStatus;
+import com.voiceagent.service.OrderService;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Component;
 

@@ -96,14 +96,14 @@ sequenceDiagram
 
 | Component | Responsibility |
 |---|---|
-| [`VoiceController`](src/main/java/com/app/voiceagent/controller/VoiceController.java) | REST entry point. Accepts a multipart `audio` part and forwards it (plus its content type) to the orchestrator. |
-| [`VoiceAgentService`](src/main/java/com/app/voiceagent/service/VoiceAgentService.java) | Orchestrates the STT → agent → TTS pipeline and assembles the response. |
-| [`SpeechToTextService`](src/main/java/com/app/voiceagent/service/SpeechToTextService.java) | Transcribes audio by sending it to Gemini as a multimodal input via the Google GenAI SDK. |
-| [`OrderAgentService`](src/main/java/com/app/voiceagent/service/OrderAgentService.java) | Runs the LLM agent through a Spring AI `ChatClient`. |
-| [`TextToSpeechService`](src/main/java/com/app/voiceagent/service/TextToSpeechService.java) | Synthesizes speech via the Gemini TTS model and wraps the returned PCM in a WAV container. |
-| [`OrderTools`](src/main/java/com/app/voiceagent/tool/OrderTools.java) / [`OrderService`](src/main/java/com/app/voiceagent/service/OrderService.java) | A Spring AI `@Tool` the model can call to fetch order status (currently stubbed data). |
-| [`AiConfig`](src/main/java/com/app/voiceagent/configuration/AiConfig.java) | Builds the `ChatClient` with the system prompt, logging advisor, and tools. |
-| [`GeminiClientConfig`](src/main/java/com/app/voiceagent/configuration/GeminiClientConfig.java) | Provides the raw Google GenAI SDK `Client` used by the audio services. |
+| [`VoiceController`](src/main/java/com/voiceagent/controller/VoiceController.java) | REST entry point. Accepts a multipart `audio` part and forwards it (plus its content type) to the orchestrator. |
+| [`VoiceAgentService`](src/main/java/com/voiceagent/service/VoiceAgentService.java) | Orchestrates the STT → agent → TTS pipeline and assembles the response. |
+| [`SpeechToTextService`](src/main/java/com/voiceagent/service/SpeechToTextService.java) | Transcribes audio by sending it to Gemini as a multimodal input via the Google GenAI SDK. |
+| [`OrderAgentService`](src/main/java/com/voiceagent/service/OrderAgentService.java) | Runs the LLM agent through a Spring AI `ChatClient`. |
+| [`TextToSpeechService`](src/main/java/com/voiceagent/service/TextToSpeechService.java) | Synthesizes speech via the Gemini TTS model and wraps the returned PCM in a WAV container. |
+| [`OrderTools`](src/main/java/com/voiceagent/tool/OrderTools.java) / [`OrderService`](src/main/java/com/voiceagent/service/OrderService.java) | A Spring AI `@Tool` the model can call to fetch order status (currently stubbed data). |
+| [`AiChatClientConfig`](src/main/java/com/voiceagent/configuration/AiConfig.java) | Builds the `ChatClient` with the system prompt, logging advisor, and tools. |
+| [`GeminiClientConfig`](src/main/java/com/voiceagent/configuration/GeminiClientConfig.java) | Provides the raw Google GenAI SDK `Client` used by the audio services. |
 
 ---
 

@@ -1,13 +1,13 @@
-package com.app.voiceagent.configuration;
+package com.voiceagent.configuration;
 
-import com.app.voiceagent.tool.OrderTools;
+import com.voiceagent.tool.OrderTools;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class AiConfig {
+public class AiChatClientConfig {
 
     @Bean
     ChatClient chatClient(ChatClient.Builder builder, OrderTools orderTools) {

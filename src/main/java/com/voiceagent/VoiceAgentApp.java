@@ -1,4 +1,4 @@
-package com.app.voiceagent;
+package com.voiceagent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
