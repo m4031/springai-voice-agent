@@ -1,3 +1,3 @@
-package com.voiceagent.dto;
+package com.springai.voiceagent.dto;
 
 public record VoiceResponse( String transcript, String response, String audioBase64) { }

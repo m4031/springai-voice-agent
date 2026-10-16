@@ -1,6 +1,6 @@
-package com.voiceagent.configuration;
+package com.springai.voiceagent.configuration;
 
-import com.voiceagent.tool.OrderTools;
+import com.springai.voiceagent.tool.OrderTools;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.context.annotation.Bean;

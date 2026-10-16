@@ -1,4 +1,4 @@
-package com.voiceagent.configuration;
+package com.springai.voiceagent.configuration;
 
 import com.google.genai.Client;
 import org.slf4j.Logger;

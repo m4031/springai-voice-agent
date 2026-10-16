@@ -1,4 +1,4 @@
-package com.voiceagent.service;
+package com.springai.voiceagent.service;
 
 import com.google.genai.Client;
 import com.google.genai.types.Content;

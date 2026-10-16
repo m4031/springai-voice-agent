@@ -1,6 +1,6 @@
-package com.voiceagent.service;
+package com.springai.voiceagent.service;
 
-import com.voiceagent.dto.OrderStatus;
+import com.springai.voiceagent.dto.OrderStatus;
 import org.springframework.stereotype.Service;
 
 @Service

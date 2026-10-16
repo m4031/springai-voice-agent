@@ -1,7 +1,7 @@
-package com.voiceagent.controller;
+package com.springai.voiceagent.controller;
 
-import com.voiceagent.dto.VoiceResponse;
-import com.voiceagent.service.VoiceAgentService;
+import com.springai.voiceagent.dto.VoiceResponse;
+import com.springai.voiceagent.service.VoiceAgentService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
